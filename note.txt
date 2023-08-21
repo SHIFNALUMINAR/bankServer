@@ -1,0 +1,88 @@
+MVC- model view control
+
+- npm i nodemon
+
+
+front-end server integration
+-----------------------------
+
+cors - library  -cross origine resourse sharing 
+npm i cors 
+
+
+db - server integration
+--------------------------
+
+mongoose -library 
+
+
+methods for mongodb operations from node
+----------------------------------------
+
+c - new modelname({keys:values})    - save() 
+                                    new users(
+                                        {
+                                        acno:123,
+                                        uname:"anu",
+                                        psw:"abc123",
+                                        balance:0,
+                                        transactions:[]
+                                        }
+                                        )
+r - find() - to access all datas in collection
+    findOne({data})   eq: findOne({acno:1000})  - object of that perticular user
+u - findOne({})    - save()
+d - deleteOne({})
+
+
+
+   acno=req.body.acno
+
+   {acno}=req.body
+
+
+   const acno = req.body.acno
+    const uname = req.body.uname
+    const psw = req.body.psw
+
+    const {acno,uname,psw}=req.body
+
+
+Json Web Token(jwt)
+------------------
+
+user - authentication with token 
+jsonwebtoken - library 
+
+
+middlewares 
+-----------
+
+middlewares can control the requests in server
+
+middleware code - true/false
+
+                true- continue the request 
+                false - block the request 
+
+types
+-----
+    -1 - application specific middleware  - to control all server requests
+    -2 - router specific middleware       - to control specific server requests
+
+
+
+
+
+
+
+
+
+
+
+
+
+abc123   -  321cba                                        321cba - abc123 
+
+
+
